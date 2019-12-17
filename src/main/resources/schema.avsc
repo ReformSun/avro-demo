@@ -1,0 +1,19 @@
+{
+    "namespace": "com.avro.example",
+    "type": "record",
+    "name": "Person",
+    "fields": [
+        {"name": "name", "type": "string"},
+        {"name": "favorite_number",  "type": ["int", "null"]},
+        {"name": "favorite_color", "type": ["string", "null"]},
+        {"name": "friends", "type": ["null",{"type":"array", "items": "string"}]},
+        {"name": "Enums", "type": ["null",{ "type": "enum",
+                                            "name": "Suit",
+                                            "symbols" : ["SPADES", "HEARTS", "DIAMONDS", "CLUBS"]
+                                            }]},
+        {"name": "friends", "type": ["null",{"type": "map", "values": "long"}]}
+
+    ]
+}
+
+http://blog.sina.com.cn/s/blog_567e650201011s7n.html

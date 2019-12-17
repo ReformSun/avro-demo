@@ -1,0 +1,18 @@
+{
+    "type":"record",
+    "name":"KeyValuePair",
+    "namespace":"org.apache.avro.mapreduce",
+    "doc":"A key/value pair",
+    "fields":[
+        {
+            "name":"key",
+            "type":"long",
+            "doc":"The key"
+        },
+        {
+            "name":"value",
+            "type":"long",
+            "doc":"The value"
+        }
+    ]
+}
